@@ -8,8 +8,10 @@
     tools:context=".EmployeeListActivity" >
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:gravity="center"
+        android:text="No Employees Found"
+        android:textSize="30sp" />
 </LinearLayout>

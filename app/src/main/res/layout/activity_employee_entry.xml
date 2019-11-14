@@ -19,7 +19,8 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create" />
+        android:onClick="onCreateEmployeeButtonClicked"
+        android:text="Create/Update" />
 
     <EditText
         android:id="@+id/fnameET"
@@ -68,4 +69,13 @@
         android:ems="10"
         android:hint="Weight"
         android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/curEm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Current Employee"
+        android:textSize="18sp" />
+
 </LinearLayout>
