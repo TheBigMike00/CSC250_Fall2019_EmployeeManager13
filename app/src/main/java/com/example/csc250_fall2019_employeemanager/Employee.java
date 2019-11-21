@@ -11,6 +11,16 @@ public class Employee
 
     public Employee(String fname, String lname, int height_feet, int height_inches, int age, double weight)
     {
+        this.updateData(fname, lname, height_feet, height_inches, age, weight);
+    }
+
+    public String toString()
+    {
+        return this.fname + " " + this.lname;
+    }
+
+    public void updateData(String fname, String lname, int height_feet, int height_inches, int age, double weight)
+    {
         this.fname = fname;
         this.lname = lname;
         this.height_feet = height_feet;
@@ -65,12 +75,5 @@ public class Employee
 
     public double getWeight() {
         return weight;
-    }
-
-    public String toString()
-    {
-        return "Name: " + this.getFname() + " " + this.getLname() + "\nHeight: " + this.getHeight_feet()
-                + "ft " + this.getHeight_inches() + "in." + "\nAge: " + this.getAge() + "\nWeight: "
-                + this.getWeight();
     }
 }
